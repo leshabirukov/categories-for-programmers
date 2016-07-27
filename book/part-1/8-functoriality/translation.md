@@ -2,6 +2,8 @@
 
 Since functors are morphisms in *Cat* (the category of categories), a lot of intuitions about morphisms &#8212; and functions in particular &#8212; apply to functors as well. For instance, just like you can have a function of two arguments, you can have a functor of two arguments, or a *bifunctor*. On objects, a bifunctor maps every pair of objects, one from category C, and one from category D, to an object in category E. Notice that this is just saying that it's a mapping from a *cartesian product* of categories C×D to E.
 
+Поскольку функторы - морфизмы в *Cat* (категория категорий), привычные представления о морфизмах &-; и функциях в частности &-; также применимы и к функторам. Например, подобно двухаргументной функции, может существовать функтор от двух аргументов, или *бифунктор*. Действуя на объекты, бифунктор отображает любую пару объектов, из категорий C и D, на объект категории E. Заметьте, точно так же можно сказать, что это отображение *декартова произведения* категорий C×D на E.
+
 <a href="https://bartoszmilewski.files.wordpress.com/2015/01/bifunctor.jpg"><img class="aligncenter size-medium wp-image-4068" src="https://bartoszmilewski.files.wordpress.com/2015/01/bifunctor.jpg?w=300&#038;h=286" alt="Bifunctor" width="300" height="286" /></a>
 
 That's pretty straightforward. But functoriality means that a bifunctor has to map morphisms as well. This time, though, it must map a pair of morphisms, one from C and one from D, to a morphism in E. 
