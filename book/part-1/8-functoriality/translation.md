@@ -1,3 +1,7 @@
+Now that you know what a functor is, and have seen a few examples, let’s see how we can build larger functors from smaller ones. In particular it’s interesting to see which type constructors (which correspond to mappings between objects in a category) can be extended to functors (which include mappings between morphisms).
+
+Теперь, когда вы знаете что функтор представляет из себя, и рассмотрели пару примеров, давайте разберёмся, как строить из простых функторов более сложные. Особенно интересно выяснить, какие конструкторы типов (которые отображают между собой объекты категории) можно расширить до функторов (которые включают отображения морфизмов).
+
 ## Bifunctors
 
 Since functors are morphisms in *Cat* (the category of categories), a lot of intuitions about morphisms &#8212; and functions in particular &#8212; apply to functors as well. For instance, just like you can have a function of two arguments, you can have a functor of two arguments, or a *bifunctor*. On objects, a bifunctor maps every pair of objects, one from category C, and one from category D, to an object in category E. Notice that this is just saying that it's a mapping from a *cartesian product* of categories C×D to E.
