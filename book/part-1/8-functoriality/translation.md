@@ -24,9 +24,15 @@ Again, a pair of morphisms is just a single morphism in the product category C×
 
 The composition is associative and it has an identity &#8212; a pair of identity morphisms *(id, id)*. So a cartesian product of categories is indeed a category.
 
+Эта композиция ассоциативна и имеет нейтральный элемент &#8212; пару тождественных морфизмов *(id, id)*. Так что декартово произведение категорий действительно является категорией.
+
 But an easier way to think about bifunctors is that they are functors in both arguments. So instead of translating functorial laws &#8212; associativity and identity preservation &#8212; from functors to bifunctors, it's enough to check them separately for each argument. If you have a mapping from a pair of categories to a third category, and you prove that it is functorial in each argument separately (i.e., keeping the other argument constant), then the mapping is automatically a bifunctor. By *functorial* I mean that it acts on morphisms like an honest functor.
 
+Но проще представить себе бифункторы как отображения, функториальные по обоим аргументам. Вместо непосредственного вывода функториальных законов &#8212; сохранения ассоциативности и тождества &#8212; для бифункторов, достаточно проверить их независимо для каждого аргумента. Если имея отображение из пары категорий в третью, вы доказали функториальность покомпонентно (при постоянном другом аргументе), вы автоматически получаете бифунктор. Под *функториальностью* подразумевается действие на морфизмы подобно настоящему функтору.
+
 Let's define a bifunctor in Haskell. In this case all three categories are the same: the category of Haskell types. A bifunctor is a type constructor that takes two type arguments. Here's the definition of the `Bifunctor` typeclass taken directly from the library `Control.Bifunctor`:
+
+Определим бифунктор на Haskell. В этом случае все три категории совпадают: это категория типов Haskell. Бифунктор это двухаргументный конструктор типов. Вот определение класса типов `Bifunctor` непосредственно из библиотеки `Control.Bifunctor`:
 
 ```
 class Bifunctor <span class="red">f</span> where
